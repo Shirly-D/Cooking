@@ -1,0 +1,27 @@
+%icon {
+    font-family: FontAwesome;
+    font-size: 20px;
+    text-indent: 0;
+    float: left;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    h1 { flex-basis: 13%; }
+    .search-field { 
+        display: flex;
+        flex-basis: 35%;
+        div:first-child {
+          a { text-indent: -9999px; }
+        }
+        div:first-child::before { 
+          content: "\f002";
+          @extend %icon; 
+          color: #9F9A9D;
+
+        }
+      }
+      
+}
