@@ -116,7 +116,7 @@ li {
   margin: 0 auto;
 }
 
-.recipe-guide .recipe-slider ul li .recipe-description .time::after, .banner .banner-icon li a::before, .header-section .search-field div:first-child::before {
+.newsletter .icons p::before, .newsletter .icons ul li a::before, .recipe-guide .master-basics ul .recipe-image div a::before, .recipe-guide .recipe-display .recipe-list .view-recipe div a::before, .recipe-guide .recipe-slider ul li .recipe-description .time::after, .banner .banner-icon li a::before, .header-section .search-field div:first-child::before {
   font-family: FontAwesome;
   font-size: 24px;
   text-indent: 0;
@@ -138,6 +138,15 @@ li {
 .banner .banner-icon, .banner .card-text, .banner .banner-recipe {
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.recipe-guide .recipe-display, .recipe-guide .recipe-slider {
+  border-bottom: 9px solid #292728;
+}
+
+.newsletter .icons ul, .recipe-guide .master-basics ul, .recipe-guide .recipe-display .recipe-list, .recipe-guide .recipe-slider .inbox, .recipe-guide .recipe-slider ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-section {
@@ -341,6 +350,22 @@ li {
 .recipe-guide .recipe-sub-text::first-letter {
   text-transform: capitalize;
 }
+.recipe-guide .collection-btn {
+  text-align: center;
+}
+.recipe-guide .collection-btn a {
+  padding: 15px 3%;
+  border: 2px solid #928F8D;
+  border-radius: 6px;
+  color: #6E7473;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.recipe-guide .collection-btn a:hover {
+  background-color: #928F8D;
+  color: #FFFFFF;
+}
 .recipe-guide .wrapper {
   width: 79%;
 }
@@ -363,10 +388,11 @@ li {
   font-weight: bold;
   text-transform: uppercase;
 }
+.recipe-guide .recipe-slider {
+  padding-bottom: 60px;
+}
 .recipe-guide .recipe-slider ul {
   margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
 }
 .recipe-guide .recipe-slider ul li {
   width: 23%;
@@ -401,7 +427,6 @@ li {
   margin-bottom: 28px;
 }
 .recipe-guide .recipe-slider .inbox {
-  display: flex;
   justify-content: space-around;
 }
 .recipe-guide .recipe-slider .inbox div p:first-child {
@@ -427,5 +452,269 @@ li {
 .recipe-guide .recipe-slider .inbox div p:last-child a:hover {
   color: #000000;
 }
+.recipe-guide .recipe-slider .inbox form {
+  display: flex;
+  flex-basis: 53%;
+}
+.recipe-guide .recipe-slider .inbox form div:first-child {
+  margin-left: 6%;
+  flex-basis: 57%;
+}
+.recipe-guide .recipe-slider .inbox form div .email {
+  width: 100%;
+  height: 37px;
+  padding-left: 4%;
+  border: 2px solid #E0DFDB;
+}
+.recipe-guide .recipe-slider .inbox form div .email::placeholder {
+  color: #E0DFDB;
+}
+.recipe-guide .recipe-slider .inbox form div:last-child {
+  margin-left: 7%;
+}
+.recipe-guide .recipe-slider .inbox form div .sign-up {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #DB3E35;
+  border-radius: 4px;
+  background-color: #DB3E35;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.recipe-guide .recipe-slider .inbox form div .sign-up:hover {
+  background-color: #949597;
+}
+.recipe-guide .recipe-display {
+  padding-bottom: 70px;
+}
+.recipe-guide .recipe-display .recipe-list {
+  flex-wrap: wrap;
+}
+.recipe-guide .recipe-display .recipe-list li {
+  width: 48%;
+  margin-bottom: 35px;
+  background-color: #FFFFFF;
+}
+.recipe-guide .recipe-display .recipe-list .view-recipe {
+  padding: 30px 3% 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.recipe-guide .recipe-display .recipe-list .view-recipe h4 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.recipe-guide .recipe-display .recipe-list .view-recipe div a {
+  padding: 10px 5%;
+  background-color: #DB3E35;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.recipe-guide .recipe-display .recipe-list .view-recipe div a::before {
+  content: "\f097";
+  margin-right: 12px;
+}
+.recipe-guide .recipe-display .recipe-list .view-recipe div a:hover {
+  background-color: #949597;
+}
+.recipe-guide .master-basics ul {
+  padding-bottom: 55px;
+}
+.recipe-guide .master-basics ul li {
+  background-color: #241F25;
+}
+.recipe-guide .master-basics ul .recipe-image {
+  position: relative;
+}
+.recipe-guide .master-basics ul .recipe-image div {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+}
+.recipe-guide .master-basics ul .recipe-image div a {
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.recipe-guide .master-basics ul .recipe-image div a::before {
+  content: "\f01d";
+  color: #FFFFFF;
+}
+.recipe-guide .master-basics ul .cooking-guide {
+  padding: 20px 5% 50px;
+  letter-spacing: 1px;
+}
+.recipe-guide .master-basics ul .cooking-guide p:first-child {
+  margin-bottom: 6px;
+  color: #B0ABB1;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.recipe-guide .master-basics ul .cooking-guide h4 {
+  margin-bottom: 6px;
+  color: #FCF8FC;
+  text-transform: capitalize;
+}
+.recipe-guide .master-basics ul .cooking-guide p:last-child {
+  font-size: 14px;
+  color: #B6B1B7;
+  text-transform: capitalize;
+}
 
 /*recipe guide section end*/
+/* newsletter section start*/
+.newsletter {
+  padding: 30px 0 45px;
+  background-color: #E5E7E2;
+}
+.newsletter .wrapper {
+  width: 78%;
+}
+.newsletter .newsletter-mail {
+  width: 65%;
+  display: inline-block;
+}
+.newsletter .newsletter-mail h4 {
+  margin-bottom: 10px;
+  color: #555350;
+  font-family: serif;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.newsletter .newsletter-mail p {
+  margin-bottom: 30px;
+  color: #7D7B7A;
+  font-size: 18px;
+}
+.newsletter .newsletter-mail p::first-letter {
+  text-transform: capitalize;
+}
+.newsletter .newsletter-mail p a {
+  border-bottom: 1px solid #7D7B7A;
+  color: inherit;
+  cursor: pointer;
+  transition: 1s;
+}
+.newsletter .newsletter-mail p a:hover {
+  color: #000000;
+}
+.newsletter .newsletter-mail form {
+  display: flex;
+  flex-basis: 53%;
+}
+.newsletter .newsletter-mail form div:first-child {
+  margin-left: 6%;
+  flex-basis: 57%;
+}
+.newsletter .newsletter-mail form div .email {
+  width: 100%;
+  height: 37px;
+  padding-left: 4%;
+  border: 2px solid #E0DFDB;
+}
+.newsletter .newsletter-mail form div .email::placeholder {
+  color: #E0DFDB;
+}
+.newsletter .newsletter-mail form div:last-child {
+  margin-left: 7%;
+}
+.newsletter .newsletter-mail form div .sign-up {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #DB3E35;
+  border-radius: 4px;
+  background-color: #DB3E35;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.newsletter .newsletter-mail form div .sign-up:hover {
+  background-color: #949597;
+}
+.newsletter .newsletter-mail form div:first-child {
+  margin-left: 0;
+  flex-basis: 34%;
+}
+.newsletter .icons {
+  width: 34%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.newsletter .icons ul {
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.newsletter .icons ul li {
+  margin-left: 5%;
+}
+.newsletter .icons ul li a {
+  padding: 13px 15px;
+  border: 3px solid #D9DBD8;
+  border-radius: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+  transition: 1s;
+}
+.newsletter .icons ul li a::before {
+  color: #5A585B;
+}
+.newsletter .icons ul li a:hover {
+  background-color: #928F8D;
+  color: #FFFFFF;
+}
+.newsletter .icons ul li .pinterest::before {
+  content: "\f231";
+}
+.newsletter .icons ul li .facebook::before {
+  content: "\f09a";
+}
+.newsletter .icons ul li .twitter::before {
+  content: "\f099";
+}
+.newsletter .icons p {
+  padding: 11px 30px;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: #ABABAB;
+  color: #FFFFFF;
+  font-size: 11px;
+}
+.newsletter .icons p span {
+  display: block;
+  font-size: 17px;
+}
+.newsletter .icons p::before {
+  content: "\f179";
+  margin-right: 10px;
+}
+
+/*newsletter section end*/
+footer {
+  background-color: #272228;
+}
+footer .foot-section {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot-section .footer-left {
+  width: 40%;
+  display: inline-block;
+}
+footer .foot-section .footer-left ul {
+  width: 100%;
+}
+footer .foot-section .footer-left ul li {
+  padding: 0px 3%;
+  border-right: 1px solid #E5E5EA;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+footer .foot-section .footer-left ul li a {
+  color: #E5E5EA;
+}
+footer .foot-section li:last-child {
+  border-right: none;
+}
+footer .foot-section li:last-child a {
+  font-weight: bold;
+}

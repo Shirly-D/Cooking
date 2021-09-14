@@ -1,0 +1,16 @@
+footer {
+    background-color: #272228;
+    .foot-section {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        @include footer-part;
+        li {
+            &:last-child {
+                border-right: none; 
+                a { font-weight: bold; }
+            }
+        }
+    
+    }
+}
