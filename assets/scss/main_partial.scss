@@ -1,0 +1,213 @@
+/*banner section start*/
+
+.banner {
+    margin-top: -14px;
+    position: relative;
+    .wrapper { width: 100%; }
+    .banner-recipe {
+        width: 9%;
+        padding: 45px 0%;
+        border-radius: 50%;
+        @extend %banner-position;
+        z-index: 1;
+        top: 100px;
+        right: -2%;
+        background-color: #DB3E35;
+        color: $primary-color3;
+        font-weight: $weight;
+        text-align: $align;
+        text-transform: $text-trans1;
+        span {
+            display: block;
+        }
+    }
+    .card-text {
+        width: 25%;
+        @extend %banner-position;
+        top: 290px;
+        right: -6%;
+        background-color: $primary-color3;  
+        .recipe-text {
+            padding: 50px 6% 40px;
+            h2 {
+                margin-bottom: $margin;
+                color: #262F38;
+                font-size: 36px;
+                font-family: $family;
+                letter-spacing: 1px;
+                text-align: $align;
+                text-transform: $text-trans2;
+            }
+            p {
+                margin-bottom: $margin;
+                color: #7F8388;
+                font-size: 23px;
+                font-family: $family;
+                text-align: $align;
+                &::first-letter { text-transform: $text-trans2; }
+            }
+            div {
+                text-align: $align;
+                figure { 
+                    width: 12%;
+                    display: $display;
+                    img { border-radius: 50%; }
+                }
+                h3 {
+                    margin-left: 2%;
+                    display: $display;
+                    color: #302F42;
+                    font-weight: $weight;
+                    text-transform: $text-trans1;
+                }
+            }
+        }
+    }
+    .banner-icon {
+        @extend %banner-position;
+        bottom: 0px;
+        left: 15%;
+        li {
+            transition: $transition;
+            &:first-child { 
+                a {
+                    text-indent: 0;
+                    text-transform: $text-trans2;
+                }
+            }
+            a {
+                padding: 15px;
+                border-radius: 4px;
+                background-color: rgba($color: $primary-color4, $alpha: .6);
+                color: $primary-color3;
+                text-indent: -9999px;
+                &::before {
+                    margin-right: 5px;
+                    @extend %icon;
+                    font-size: 18px;
+                }
+            }
+            &:hover {
+                background-color: #7F8388;
+            }
+            .bookmark::before { content: "\f097"; }
+            .facebook::before { content: "\f09a"; }
+            .pinterest::before { content: "\f231"; }
+            .share::before { content: "\f064"; }   
+        }
+    }
+}
+
+/*banner section end*/
+
+/*recipe guide section start*/
+
+.recipe-guide {
+    background-color: #F1F3EE;
+    padding: 55px 0;
+    .recipe-text {
+        margin: 16px 0 8px;
+        color: #36383B;
+        font-family: $family;
+        font-size: 32px;
+        text-transform: $text-trans2;
+    }
+    .recipe-sub-text {
+        margin-bottom: 45px;
+        color: #B3A7A4;
+        font-size: 30px;
+        &::first-letter { text-transform: $text-trans2; }
+    }
+    .wrapper { width: 79%; }
+    .recipe-heading {
+        text-align: $align;
+        h2 {
+            margin-bottom: 10px;
+            color: #25252C;
+            font-size: 50px;
+            font-weight: $weight;
+            text-transform: $text-trans2;
+        }
+        p {
+            padding-bottom: 50px;
+            border-bottom: 9px solid #292728;
+            color: #595553;
+            font-family: $family;
+            font-size: 19px;
+            font-weight: $weight;
+            text-transform: $text-trans1;
+        }
+    }
+    .recipe-slider {
+        ul {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 23%;
+                .recipe-description {
+                    padding: 16px 12px;
+                    background-color: #FFFFFF;
+                    h4 {
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        margin-bottom: 46px;
+                        color: #585659;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                    }
+                    .time {
+                        margin-bottom: 8px;
+                        color: #CECCCF;
+                        font-size: 13px;
+                        &::after {
+                            content: "\f097";
+                            @extend %icon;
+                            cursor: pointer;
+                            float: right;
+                        }
+                    }
+                }
+                &:last-child {
+                    p { margin-bottom: 28px; }
+                }
+            }
+        }
+        .inbox {
+            display: flex;
+            justify-content: space-around;
+            div {
+                p {
+                    &:first-child {
+                        margin-bottom: 8px;
+                        color: #2C2928;
+                        font-size: 18px;
+                        font-weight: bold;
+                        &::first-letter { text-transform: $text-trans2; }
+                    }
+                }
+                p {
+                    &:last-child {
+                        color: #B7B3B3;
+                        &::first-letter { text-transform: $text-trans2; }
+                    a {
+                        border-bottom: 2px solid $primary-color5 ;
+                        color: $primary-color5;
+                        transition: $transition;
+                        &:hover { color: $primary-color4; }
+                    }
+                }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+
+/*recipe guide section end*/

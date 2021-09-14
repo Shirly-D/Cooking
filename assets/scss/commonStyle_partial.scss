@@ -1,0 +1,23 @@
+%icon {
+    font-family: FontAwesome;
+    font-size: 24px;
+    text-indent: 0;
+    float: left;
+}
+
+%list {
+    display: block;
+    color: #938E8E;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+%header-link {
+    border-color: #DEDCDF;
+    border-bottom: none;  
+}
+
+%banner-position {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

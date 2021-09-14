@@ -1,28 +1,28 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
   <title>Client</title>
-  
+
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <meta name="description" lang="en" content="Cooking">
-  
+
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
   <meta name="keywords" lang="en" content="Cooking">
-  
+
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
   <meta http-equiv="Pragma" content="no-store, no-cache" />
   <meta http-equiv="Expires" content="0" /> -->
 
@@ -33,9 +33,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="./assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css">
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
   <!--[if lt IE 9]>  
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
   <![endif]-->
@@ -51,7 +51,7 @@
         <div class="header-section">
           <h1>
             <a href="index.html" title="Logo">
-              <img src="https://via.placeholder.com/206x36.png" alt="Cooking">
+              <img src="https://via.placeholder.com/260x72.png" alt="Cooking">
             </a>
           </h1>
           <div class="search-field">
@@ -65,57 +65,59 @@
           <div class="menu">
             <div class="hamburger">
               <div class="bar">menu</div>
-              <nav>
-                <ul>
-                  <li><a href="#fixme" title="What to cook this week">what to cook this week</a></li>
-                  <li><a href="#fixme" title="Cooking guides">cooking guides</a></li>
-                  <li><a href="#fixme" title="Recipe box">your recipe box <span>log in</span></a></li>
-                  <li><a href="#fixme" title="Subscribe">subscribe</a></li>
-                </ul>
-              </nav>
             </div>
+            <nav>
+              <ul>
+                <li><a href="#fixme" title="What to cook this week">what to cook this week</a></li>
+                <li><a href="#fixme" title="Cooking guides">cooking guides</a></li>
+                <li class="active"><a href="#fixme" title="Recipe box">your recipe box <span>log in</span></a></li>
+                <li><a href="#fixme" title="Subscribe">subscribe</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-    </header>
-    <!--header section start-->
-    <!--main section start-->
-    <main>
-      <section class="banner">
-        <div class="wrapper">
-          <figure>
-            <img src="https://via.placeholder.com/1518x581.png" alt="Banner-image">
-          </figure>
-          <div class="card-text">
-            <div>recipe of the day</div>
-            <div class="recipe-text">
-              <h2>sausage parmesan with garlicky broccoli</h2>
-              <p>on a weeknight, cook your main course and side dish at the same time.</p>
-              <div>
-                <figure>
-                  <img src="https://via.placeholder.com/48x48.png" alt="Melissa Clark">
-                </figure>
-                <h3>melissa clark</h3>
-              </div>
+  </div>
+  </header>
+  <!--header section start-->
+  <!--main section start-->
+  <main>
+    <section class="banner">
+      <div class="wrapper">
+        <figure>
+          <img src="https://via.placeholder.com/1518x581.png" alt="Banner-image">
+        </figure>
+        <div class="banner-recipe">recipe <span>of the day</span></div>
+        <div class="card-text">
+          <div class="recipe-text">
+            <h2>sausage parmesan with garlicky broccoli</h2>
+            <p>on a weeknight, cook your main course and side dish at the same time.</p>
+            <div>
+              <figure>
+                <img src="https://via.placeholder.com/48x48.png" alt="Melissa Clark">
+              </figure>
+              <h3>melissa clark</h3>
             </div>
           </div>
-          <ul class="banner-icon">
-            <li><a href="#fixme" title="Bookmark" class="bookmark">save to recipe box</a></li>
-            <li><a href="#fixme" title="Facebook" class="facebook">facebook</a></li>
-            <li><a href="#fixme" title="Pinterest" class="pinterest">pinterest</a></li>
-            <li><a href="#fixme" title="Share" class="share">share</a></li>
-          </ul>
         </div>
-      </section>
-      <section class="recipe-guide">
-        <div class="wrapper">
-          <div class="recipe-heading">
-            <h2>what to cook this week</h2>
-            <p>free recipe, guides and more for the week of february 25th</p>
-          </div>
-          <div class="recipe-slider">
+        <ul class="banner-icon">
+          <li><a href="#fixme" title="Bookmark" class="bookmark">save to recipe box</a></li>
+          <li><a href="#fixme" title="Facebook" class="facebook">facebook</a></li>
+          <li><a href="#fixme" title="Pinterest" class="pinterest">pinterest</a></li>
+          <li><a href="#fixme" title="Share" class="share">share</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="recipe-guide">
+      <div class="wrapper">
+        <div class="recipe-heading">
+          <h2>what to cook this week</h2>
+          <p>free recipe, guides and more for the week of february 25th</p>
+        </div>
+        <div class="recipe-slider">
           <h3 class="recipe-text">sam's suggestions</h3>
-          <p class="recipe-sub-text">recipes selected throughout the week by Sam Sifton, food editor of The New York Times.</p>
+          <p class="recipe-sub-text">recipes selected throughout the week by Sam Sifton, food editor of The New York
+            Times.</p>
           <ul>
             <li>
               <figure>
@@ -124,7 +126,7 @@
               <div class="recipe-description">
                 <h4>sausage and cabbage</h4>
                 <p>by julia moskin</p>
-                <p>3 hours</p>
+                <p class="time">3 hours</p>
               </div>
             </li>
             <li>
@@ -134,7 +136,7 @@
               <div class="recipe-description">
                 <h4>baked xiti</h4>
                 <p>by alison roman</p>
-                <p>1 1/2 hours</p>
+                <p class="time">1 1/2 hours</p>
               </div>
             </li>
             <li>
@@ -144,7 +146,7 @@
               <div class="recipe-description">
                 <h4>cider-spiked fish pie</h4>
                 <p>by tejal rao</p>
-                <p>1 hours</p>
+                <p class="time">1 hours</p>
               </div>
             </li>
             <li>
@@ -154,7 +156,7 @@
               <div class="recipe-description">
                 <h4>sourdough pancake or waffle batter</h4>
                 <p>by sam sifton</p>
-                <p>15 mins, plus overnight rest</p>
+                <p class="time">15 mins, plus overnight rest</p>
               </div>
             </li>
           </ul>
@@ -250,7 +252,8 @@
         </div>
         <div class="master-basics">
           <h3 class="recipe-text">master the basics</h3>
-          <p class="recipe-sub-text">our guides offer recipes, videos, techniques and tips for movies and advanced cooks.</p>
+          <p class="recipe-sub-text">our guides offer recipes, videos, techniques and tips for movies and advanced
+            cooks.</p>
           <ul>
             <li>
               <div class="recipe-image">
@@ -323,7 +326,8 @@
       <div class="wrapper">
         <div class="newsletter-mail">
           <h4>get our newsletter</h4>
-          <p>get recipes, tips and NYT special offers delivered to your inbox. Opt put or <a href="#fixme" title="Contact us">contact us</a> anytime.</p>
+          <p>get recipes, tips and NYT special offers delivered to your inbox. Opt put or <a href="#fixme"
+              title="Contact us">contact us</a> anytime.</p>
           <form action="#fixme" method="POST">
             <div>
               <input type="text" class="mail" placeholder="Add Your Email">
@@ -344,35 +348,36 @@
       </div>
     </section>
 
-    </main>
-    <!--main section end-->
+  </main>
+  <!--main section end-->
 
-    <!--footer section start-->
-    <footer>    
-      <div class="wrapper">
-        <div class="footer-left">
-          <ul>
-            <li><a href="#fixme" title="NYTimes.com">NYTimes.com</a></li>
-            <li><a href="#fixme" title="NYTimes.com/food">NYTimes.com/food</a></li>
-            <li><a href="#fixme" title="FAQ">FAQ</a></li>
-            <li><a href="#fixme" title="Feedback">Send Us Feedback</a></li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <ul>
-            <li><a href="#fixme" title="Privacy">privacy policy</a></li>
-            <li><a href="#fixme" title="Terms of service">terms of service</a></li>
-            <li><a href="#fixme" title="NYT Company">&copy; the new york times company</a></li>
-          </ul>
-        </div>
-      </div>  
-    </footer>
-    <!--footer section end-->
+  <!--footer section start-->
+  <footer>
+    <div class="wrapper">
+      <div class="footer-left">
+        <ul>
+          <li><a href="#fixme" title="NYTimes.com">NYTimes.com</a></li>
+          <li><a href="#fixme" title="NYTimes.com/food">NYTimes.com/food</a></li>
+          <li><a href="#fixme" title="FAQ">FAQ</a></li>
+          <li><a href="#fixme" title="Feedback">Send Us Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#fixme" title="Privacy">privacy policy</a></li>
+          <li><a href="#fixme" title="Terms of service">terms of service</a></li>
+          <li><a href="#fixme" title="NYT Company">&copy; the new york times company</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--footer section end-->
 
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="js/script.js"></script> -->
 </body>
+
 </html>
