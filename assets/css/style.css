@@ -396,10 +396,10 @@ li {
 }
 .recipe-guide .recipe-slider ul li {
   width: 23%;
+  background-color: #FFFFFF;
 }
 .recipe-guide .recipe-slider ul li .recipe-description {
   padding: 16px 12px;
-  background-color: #FFFFFF;
 }
 .recipe-guide .recipe-slider ul li .recipe-description h4 {
   margin-bottom: 5px;
@@ -709,6 +709,9 @@ footer .foot-section .footer-left ul li {
   font-size: 15px;
   text-transform: capitalize;
 }
+footer .foot-section .footer-left ul li:last-child {
+  border-right: 0;
+}
 footer .foot-section .footer-left ul li a {
   color: #E5E5EA;
 }
@@ -717,4 +720,82 @@ footer .foot-section li:last-child {
 }
 footer .foot-section li:last-child a {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .header-section h1 img {
+    height: 90px;
+  }
+  header .header-section .search-field div:last-child input {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .header-section h1 img {
+    height: 88px;
+  }
+  header .header-section .search-field div:last-child input {
+    font-size: 15px;
+  }
+
+  .banner .banner-recipe {
+    width: 8%;
+    padding: 33px 0%;
+    top: 76px;
+    font-size: 15px;
+  }
+  .banner .card-text {
+    top: 230px;
+  }
+  .banner .card-text .recipe-text {
+    padding: 15px 6% 20px;
+  }
+  .banner .card-text .recipe-text h2 {
+    font-size: 28px;
+  }
+  .banner .banner-icon {
+    left: 20%;
+  }
+
+  .recipe-guide .master-basics ul li {
+    margin-left: 1%;
+  }
+
+  footer .footer-left {
+    width: 45%;
+  }
+  footer .footer-left ul li {
+    padding: 0px 2%;
+  }
+  footer .footer-left ul li a {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-section .search-field div:last-child {
+    width: 83%;
+  }
+
+  .banner .banner-recipe {
+    padding: 13px 0;
+    top: 66px;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .header-section h1 {
+    flex-basis: 20%;
+  }
+  .header-section .search-field {
+    display: none;
+  }
+
+  .banner .card-text {
+    top: 186px;
+  }
+  .banner .card-text .recipe-text h2 {
+    font-size: 23px;
+  }
+  .banner .card-text .recipe-text p {
+    font-size: 17px;
+  }
 }

@@ -162,9 +162,9 @@
             @extend %display;
             li {
                 width: 23%;
+                background-color: $primary-color3;
                 .recipe-description {
                     padding: 16px 12px;
-                    background-color: $primary-color3;
                     h4 {
                         margin-bottom: 5px;
                         font-size: 18px;
